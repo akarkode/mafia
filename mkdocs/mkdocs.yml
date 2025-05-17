@@ -1,0 +1,38 @@
+site_name: MAFIA Documentation
+theme:
+  name: material
+  logo: img/mafiaLogo.png  # Optional, jika ada logo
+  favicon: img/mafiaLogo.png  # Optional
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+    - header.autohide
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Features: features.md
+  - API Reference: api_reference.md
+  - Architecture: architecture.md
+  - Future Improvements: future_improvements.md
