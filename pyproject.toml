@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mafia"
+version = "0.1.0"
+description = "Middleware AI Firewall Application"
+authors = [{ name = "akarkode", email = "akarkode@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.8,<4.0"
+dependencies = [
+    "fastapi",
+    "scikit-learn",
+    "redis",
+    "httpx",
+    "uvicorn",
+    "loguru (>=0.7.3,<0.8.0)",
+    "pytest (>=8.3.5,<9.0.0)"
+]
