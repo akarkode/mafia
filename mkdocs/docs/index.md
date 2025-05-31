@@ -10,6 +10,7 @@
 ```bash
 pip install git+https://github.com/akarkode/mafia.git
 ```
+
 ---
 
 ## 🚀 Cara Menggunakan
