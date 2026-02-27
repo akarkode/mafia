@@ -1,5 +1,5 @@
 import os
-import pickle
+import joblib
 import numpy as np
 
 from loguru import logger
@@ -39,6 +39,6 @@ metadata = {
 output_dir = "mafia/models"
 os.makedirs(output_dir, exist_ok=True)
 with open(os.path.join(output_dir, "isolation_forest_model.pkl"), "wb") as f:
-    pickle.dump({"model": model, "metadata": metadata}, f)
+    joblib.dump({"model": model, "metadata": metadata}, f)
 
 logger.success("✅ Model trained and saved with updated score range metadata.")

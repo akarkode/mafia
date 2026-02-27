@@ -1,5 +1,5 @@
 import os
-import pickle
+import joblib
 import numpy as np
 from loguru import logger
 
@@ -11,7 +11,7 @@ class BruteForceDetector:
             raise FileNotFoundError("Model file not found. Please train the model first.")
 
         with open(model_path, "rb") as f:
-            data = pickle.load(f)
+            data = joblib.load(f)
             self.model = data["model"]
             self.metadata = data["metadata"]
 
